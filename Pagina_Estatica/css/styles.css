@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Kanit:wght@300;400;700&family=Varela+Round&display=swap');
+
+:root{
+    --gold1: #f4bd76;
+    --gold2: #f6cd8f;
+    --gray:  #ffffff80;
+    --gray2: #f7d9d990;
+    --black1: #1a1b1f;
+    --black2: #30353B;
+    --shadow: 0 8px 8px;
+    --color_shadow: #00000033;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kalam', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+
+.container--modifier{
+    width: 60%;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #30353B 0%, #1a1b1f 100%);
+}
+
+.nav__hero{
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.logo__name{
+    font-size: 24px;
+}
+
+.hero_textos{
+    width: 48%;
+}
+
+.link{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link--active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.point{
+    color: var(--gold1);
+}
+
+.hero_main{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.mockup{
+    width: 60%;
+    object-fit: cover;
+    max-height: 90vh;
+}
+
+.tittle{
+    font-size: 56px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.tittle__active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 24px;
+    color: var(--gray);
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 15px 0;
+}
+
+.copy__active{
+    font-weight: 700;
+}
+
+.cta{
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+}
+
+/* services */
+
+.services{
+    background: #fafafa;
+}
+
+.subtittle{
+    font-size: 42px;
+}
+
+.subtittle--modifier{
+    text-align: center;
+    margin: 6px;
+}
+
+.copy__section{
+    color: var(--black2);
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+
+.copy_section--modifier{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--black1) 0%, var(--black2) 100%);
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px var(--color_shadow);
+}
+
+.card__img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.cards__text{
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card__list{
+    color: var(--gold2);
+    font-weight: 700;
+    margin: 25px 0 12px;
+    font-size: 18px;
+}
+
+.card__tittle{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.card_button{
+    display: block;
+    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 90%;
+    color: var(--black1);
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.card__date{
+    color: var(--gold2);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.container-bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.background{
+    margin-bottom: 60px;
+    width: 68%;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.background__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.background__text{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 15px;
+    color: #fff;
+}
+
+.background_tittle{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.testimony{
+    background-color: #fafafa;
+}
+
+.testimony-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimony__Card{
+    width: 30%;
+    height: 500px;
+    background: linear-gradient(180deg, #30353B 0%, #1a1b1f 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.testimony_img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.testimony__copy{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background: linear-gradient(180deg, #30353B 0%, #1a1b1f 100%);
+    color: #fafafa;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow) var(--color_shadow);
+    padding: 15px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.testimony__copy--modifier{
+    background: none;
+    box-shadow: none;
+}
+
+.testimony__logo{
+    font-size: 40px;
+    margin-right: 15px;
+    display: inline-block;
+    height: 50px;
+}
+
+.testimony__name{
+font-size: 24px;
+line-height: 28px;
+}
+
+.testimony__position{
+    color: var(--gray);
+}
+
+.testimony__text{
+    padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+    color: #fafafa;
+}
+
+.google__logo{
+    margin-bottom: 20px;
+    size: 40px;
+    height: 40px;
+}
+
+.testimony__info{
+
+}
+
+.logo--picture{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center top;
+}
+
